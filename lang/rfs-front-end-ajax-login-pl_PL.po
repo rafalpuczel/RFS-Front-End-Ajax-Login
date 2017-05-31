@@ -1,0 +1,443 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RFS Front End Ajax Login\n"
+"POT-Creation-Date: 2017-05-31 16:43+0200\n"
+"PO-Revision-Date: 2017-05-31 16:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: admin/front-end-login-settings.php:72
+msgid "Admin access for roles:"
+msgstr "Panel administratora dostępny dla ról:"
+
+#: admin/front-end-login-settings.php:94
+msgid "Enable Login lockdown"
+msgstr "Włącz Login lockdown"
+
+#: admin/front-end-login-settings.php:99
+msgid "Yes"
+msgstr "Tak"
+
+#: admin/front-end-login-settings.php:100
+msgid "No"
+msgstr "Nie"
+
+#: admin/front-end-login-settings.php:106
+msgid "Max login fails"
+msgstr "Limit nieudanych prób logowania"
+
+#: admin/front-end-login-settings.php:106
+msgid "Number of login fails before locking the login functionality."
+msgstr ""
+"Liczba nieudanych prób logowania, która spowoduje zablokowanie logowania."
+
+#: admin/front-end-login-settings.php:114
+msgid "Login fails time period (minutes)"
+msgstr "Przedział czasu nieudanych prób logowania (minuty)"
+
+#: admin/front-end-login-settings.php:114
+msgid "Amount of time during which the login fails are counted."
+msgstr "Ilość czasu podczas kórego będą zliczane nieudane próby logowania"
+
+#: admin/front-end-login-settings.php:122
+msgid "Login lockdown time length (minutes)"
+msgstr "Długość blokowania logowania (minuty)"
+
+#: admin/front-end-login-settings.php:122
+msgid "Determines how the login functionality will be locked."
+msgstr "Określa na jak długo logowanie zostanie zablokowane."
+
+#: admin/views/settings-page.php:6
+msgid "General"
+msgstr "Ogólne"
+
+#: admin/views/settings-page.php:7
+msgid "Login Lockdown"
+msgstr "Login Lockdown"
+
+#: email/templates/password-reminder.php:22
+#: email/templates/password-reminder.php:32
+msgid "You have requested a password reminder"
+msgstr "Poprosiłeś o przypomnienie hasła"
+
+#: email/templates/password-reminder.php:31 email/templates/registration.php:31
+#: front-end/front-end-login.php:671
+msgid "Hello"
+msgstr "Witaj"
+
+#: email/templates/password-reminder.php:33
+msgid "If you received this email by mistake, you can simply ignore it."
+msgstr "Jeżeli otrzymałeś ten email przez pomyłkę, po prostu go zignoruj"
+
+#: email/templates/password-reminder.php:36
+msgid "In order to set a new password click the button below"
+msgstr "Aby ustawić nowe hasło, kliknij w poniższy przycisk"
+
+#: email/templates/password-reminder.php:44
+msgid "Set a new password"
+msgstr "Ustaw nowe hasło"
+
+#: email/templates/password-reminder.php:52 email/templates/registration.php:49
+msgid ""
+"Alternatively you can paste the link below into the browser's address bar"
+msgstr ""
+"Alternatywnie możesz wkleić poniższy link w pasek adresu w przeglądarce"
+
+#: email/templates/password-reminder.php:68 email/templates/registration.php:65
+msgid "Best regards"
+msgstr "Pozdrawiamy"
+
+#: email/templates/registration.php:22 email/templates/registration.php:32
+msgid "Your account has been created"
+msgstr "Twoje konto zostało utworzone"
+
+#: email/templates/registration.php:33
+msgid ""
+"In order to activate your account and set a password click the button below"
+msgstr ""
+"Aby aktywować swoje konto i ustawić hasło, klinknij w poniższy przycisk"
+
+#: email/templates/registration.php:41
+msgid "Activate my account"
+msgstr "Aktywuj moje konto"
+
+#: front-end/front-end-login.php:57
+msgid "An error occurred. Refresh the page and try again"
+msgstr "Wystąpił błąd. Odśwież stronę i spróbuj ponownie"
+
+#: front-end/front-end-login.php:58
+msgid "Fill in all fields"
+msgstr "Wypełnij wszystkie pola"
+
+#: front-end/front-end-login.php:59
+msgid "Invalid login or password"
+msgstr "Nieprawidłowy login lub hasło"
+
+#: front-end/front-end-login.php:60
+msgid "Authorization error occured"
+msgstr "Bład autoryzacji"
+
+#: front-end/front-end-login.php:61
+msgid "Username exists"
+msgstr "Podana nazwa użytkownika już istnieje"
+
+#: front-end/front-end-login.php:62
+msgid "Email exists"
+msgstr "Podany adres e-mail jest już zarejestrowany"
+
+#: front-end/front-end-login.php:63
+msgid "Invalid address email"
+msgstr "Nieprawidłowy adres e-mail"
+
+#: front-end/front-end-login.php:64 front-end/views/login-page.php:124
+msgid "The link is either expired or invalid"
+msgstr "Link jest przeterminowany, bądź nieprawidłowy"
+
+#: front-end/front-end-login.php:65
+msgid "Passwords must be the same"
+msgstr "Hasła muszą być takie same"
+
+#: front-end/front-end-login.php:66
+msgid "Password must contain at least 8 characters"
+msgstr "Hasło musi zawierać co najmniej 8 znaków"
+
+#: front-end/front-end-login.php:67
+msgid "Password must contain at least one lowercase letter"
+msgstr "Hasło musi zawierać co najmniej jedną małą literę"
+
+#: front-end/front-end-login.php:68
+msgid "Password must contain at least one uppercase letter"
+msgstr "Hasło musi zawierać co najmniej jedną dużą literę"
+
+#: front-end/front-end-login.php:69
+msgid "Password must contain at least one number"
+msgstr "Hasło musi zawierać co najmniej jedną cyfrę"
+
+#: front-end/front-end-login.php:70
+msgid "Password must contain at least one special character"
+msgstr "Hasło musi zawierać co najmniej jeden znak specjalny"
+
+#: front-end/front-end-login.php:71
+msgid "The user does not exist"
+msgstr "Użykownik nie istnieje"
+
+#: front-end/front-end-login.php:74
+msgid ""
+"Your account has been created. You will receive an email with an activation "
+"link."
+msgstr "Twoje konto zostało utworzone. Otrzymasz maila z linkiem aktywacyjnym."
+
+#: front-end/front-end-login.php:75
+msgid "An email with a password reset link has been sent."
+msgstr "Email z linkiem do zresetowania hasła został wysłany"
+
+#: front-end/front-end-login.php:76
+msgid "Changes has been saved"
+msgstr "Zmiany zostały zapisane"
+
+#: front-end/front-end-login.php:79
+msgid "Your password has been changed. You will be logged out in"
+msgstr "Twoje hasło zostało zmienione. Zostaniesz wylogowany/a za"
+
+#: front-end/front-end-login.php:496 front-end/front-end-login.php:722
+#: front-end/views/login-page.php:32
+msgid "Registration"
+msgstr "Rejestracja"
+
+#: front-end/front-end-login.php:536 front-end/front-end-login.php:750
+msgid "Password reminder"
+msgstr "Przypomnienie hasła"
+
+#: front-end/front-end-login.php:677
+msgid "My account"
+msgstr "Moje konto"
+
+#: front-end/front-end-login.php:682
+msgid "Logout"
+msgstr "Wyloguj"
+
+#: front-end/views/login-page.php:6
+msgid "Logging in"
+msgstr "Logowanie"
+
+#: front-end/views/login-page.php:12
+msgid "Login (username)"
+msgstr "Login (nazwa użytkownika)"
+
+#: front-end/views/login-page.php:16 front-end/views/login-page.php:94
+#: front-end/views/profile-page.php:22
+msgid "Password"
+msgstr "Hasło"
+
+#: front-end/views/login-page.php:20 front-end/views/login-page.php:50
+#: front-end/views/login-page.php:69 front-end/views/login-page.php:138
+msgid "Log in"
+msgstr "Zaloguj się"
+
+#: front-end/views/login-page.php:25
+msgid "Do not have an account yet?"
+msgstr "Nie masz konta?"
+
+#: front-end/views/login-page.php:25 front-end/views/login-page.php:46
+msgid "Register"
+msgstr "Zarejestruj się"
+
+#: front-end/views/login-page.php:27
+msgid "Forgot your password?"
+msgstr "Nie pamiętasz hasła?"
+
+#: front-end/views/login-page.php:27 front-end/views/login-page.php:65
+msgid "Remind"
+msgstr "Przypomnij"
+
+#: front-end/views/login-page.php:38
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
+#: front-end/views/login-page.php:42
+msgid "Email address"
+msgstr "Adres email"
+
+#: front-end/views/login-page.php:50
+msgid "Have an account already?"
+msgstr "Posiadasz konto?"
+
+#: front-end/views/login-page.php:55
+msgid "Password remind"
+msgstr "Przypomnienie hasła"
+
+#: front-end/views/login-page.php:61
+msgid "Username or email"
+msgstr "Nazwa użytkownika lub email"
+
+#: front-end/views/login-page.php:75
+msgid "Account activation"
+msgstr "Aktywacja konta"
+
+#: front-end/views/login-page.php:79
+msgid "Set new password"
+msgstr "Ustaw nowe hasło"
+
+#: front-end/views/login-page.php:86
+msgid "Your account has been activated. Set your new password below"
+msgstr "Twoje konto zostało aktywowane. Ustaw nowe hasło poniżej"
+
+#: front-end/views/login-page.php:98 front-end/views/profile-page.php:26
+msgid "Repeat password"
+msgstr "Powtórz hasło"
+
+#: front-end/views/login-page.php:102 front-end/views/profile-page.php:30
+msgid "Password hint"
+msgstr "Wskazówka do hasła"
+
+#: front-end/views/login-page.php:104 front-end/views/profile-page.php:32
+msgid "Password must contain:"
+msgstr "Hasło musi zawierać:"
+
+#: front-end/views/login-page.php:106 front-end/views/profile-page.php:34
+msgid "at least 8 characters"
+msgstr "co najmniej 8 znaków"
+
+#: front-end/views/login-page.php:107 front-end/views/profile-page.php:35
+msgid "at least one lower case letter"
+msgstr "co najmniej jedną małą literę"
+
+#: front-end/views/login-page.php:108 front-end/views/profile-page.php:36
+msgid "at least one uppercase letter"
+msgstr "co najmniej jedną dużą literę"
+
+#: front-end/views/login-page.php:109 front-end/views/profile-page.php:37
+msgid "at least one number"
+msgstr "co najmniej jedną cyfrę"
+
+#: front-end/views/login-page.php:110 front-end/views/profile-page.php:38
+msgid "at least one special character"
+msgstr "co najmniej jeden znak specjalny"
+
+#: front-end/views/login-page.php:116
+msgid "Set password"
+msgstr "Ustaw hasło"
+
+#: front-end/views/login-page.php:132
+msgid "Password change"
+msgstr "Zmiana hasła"
+
+#: front-end/views/login-page.php:135
+msgid "Your password has been changed. Log in using the link below"
+msgstr "Twoje hasło zostało zmienione. Zaloguj się korzystając z linku poniżej"
+
+#: front-end/views/profile-page.php:4
+msgid "Account details"
+msgstr "Szczegóły konta"
+
+#: front-end/views/profile-page.php:14
+msgid "Login (cannot be changed)"
+msgstr "Login (nie może zostać zmieniony)"
+
+#: front-end/views/profile-page.php:18
+msgid "Email"
+msgstr "Email"
+
+#: front-end/views/profile-page.php:43
+msgid "Save"
+msgstr "Zapisz"
+
+#: front-end/views/profile-page.php:50
+msgid "You have no access to this page"
+msgstr "Nie masz dostępu do tej strony"
+
+#: rfs-front-end-ajax-login.php:241
+msgid ""
+"RFS Front End AJAX Login - Login page not found. Set login page to activate "
+"plugin functionalities."
+msgstr ""
+"RFS Front End AJAX Login - Nie znaleziono strony logowania. Ustaw stronę "
+"logowania, aby aktywować funkcjonalności wtyczki."
+
+#: rfs-front-end-ajax-login.php:253
+msgid ""
+"RFS Front End AJAX Login - Profile page not found. Set profile page to "
+"activate plugin functionalities."
+msgstr ""
+"RFS Front End AJAX Login - Nie znaleziono strony profilowej. Ustaw stronę "
+"profilową, aby aktywować funkcjonalności wtyczki."
+
+#: rfs-front-end-ajax-login.php:260
+msgid ""
+"RFS Front End AJAX Login - In order to enable front end registration and "
+"profile page, turn on the user registration setting in"
+msgstr ""
+"RFS Front End AJAX Login - aby włączyć funkcjonalność rejestracji oraz "
+"stronę profilową, włącz możliwość rejestracji użytkowników w"
+
+#: rfs-front-end-ajax-login.php:260
+msgid "General Settings"
+msgstr "Ustawieniach Ogólnych"
+
+#: rfs-front-end-ajax-login.php:279
+msgid "Set as login page"
+msgstr "Ustaw jako stronę logowania"
+
+#: rfs-front-end-ajax-login.php:282
+msgid "Set as profile page"
+msgstr "Ustaw jako stronę profilową"
+
+#: rfs-front-end-ajax-login.php:302 rfs-front-end-ajax-login.php:316
+msgid "Set"
+msgstr "Ustaw"
+
+#: rfs-front-end-ajax-login.php:338
+msgid "Login page"
+msgstr "Strona logowania"
+
+#: rfs-front-end-ajax-login.php:342
+msgid "Profile page"
+msgstr "Strona profilowa"
+
+#: rfs-front-end-ajax-login.php:378
+msgid "This page is used as a login page."
+msgstr "Ta strona służy jako strona logowania."
+
+#: rfs-front-end-ajax-login.php:378
+msgid "This page is used as a profile page."
+msgstr "Ta strona służy jako strona profilowa"
+
+#~ msgid "Login (email)"
+#~ msgstr "Login (email)"
+
+#~ msgid "An error occurred. Refresh the page and try again."
+#~ msgstr "Wystąpił błą"
+
+#~ msgid ""
+#~ "This option locks the login ability for a certain amount of time after a "
+#~ "few consecutive login fails."
+#~ msgstr ""
+#~ "Zabezpieczenie blokuje na jakiś czas możliwość logowania w przypadku "
+#~ "kilku nieudanych prób logowania wykonanych pod rząd."
+
+#~ msgid "General settings"
+#~ msgstr "Ustawienia ogólne"
+
+#~ msgid "General settings of the plugin"
+#~ msgstr "Ogólne ustawienia wtyczki"
+
+#~ msgid "Security"
+#~ msgstr "Bezpieczeństwo"
+
+#~ msgid "Security settings"
+#~ msgstr "Ustawienia zabezpieczeń"
+
+#~ msgid "Additional security settings"
+#~ msgstr "Dodatkowe zabezpieczenia"
+
+#~ msgid "Additional security settings of the plugin"
+#~ msgstr "Dodatkowe zabezpieczenia"
+
+#~ msgid "Admin bar visible for roles:"
+#~ msgstr "Pasek admina widoczny dla ról:"
+
+#~ msgid "Login / Username"
+#~ msgstr "Login / Nazwa użytkownika"
+
+#~ msgid "Remind password"
+#~ msgstr "Przypomnij hasło"
+
+#~ msgid ""
+#~ "RFS Front End Login - Login page not found. Set login page to activate "
+#~ "plugin functionalities."
+#~ msgstr ""
+#~ "RFS Front End Login - Nie znaleziono strony logowania. Ustaw stronę "
+#~ "logowania, aby uruchomić funkcjonalności wtyczki."

@@ -1,0 +1,154 @@
+$font-family: inherit;
+
+// font sizes
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-h1: 36px;
+$font-size-h2: 28px;
+$font-size-h3: 24px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+$font-size-paragraph: $font-size-base;
+
+// line heights and weights
+$line-height-base: 24px;
+$line-height-sm: 18px;
+$line-height-headings: 1.2em;
+
+$font-weight-base: 400;
+$font-weight-headings: 700;
+
+$margin-lg: 10px 0;
+$margin-sm: 5px 0;
+
+$padding-base-vertical: 6px;
+$padding-base-horizontal: 12px;
+
+$padding-large-vertical: 10px;
+$padding-large-horizontal: 16px;
+$padding-xlarge-horizontal: 30px;
+
+$padding-small-vertical: 5px;
+$padding-small-horizontal: 10px;
+
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 3px;
+
+$white: #FFF;
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: lighten($gray-base, 20%);   // #333
+$gray: lighten($gray-base, 33.5%); // #555
+$gray-light: lighten($gray-base, 46.7%); // #777
+$gray-lighter: lighten($gray-base, 93.5%); // #eee
+
+$bg-light: lighten($gray-base, 93.5%);
+$bg-lighter: lighten($gray-base, 97%);
+
+$brand-primary: darken(#428bca, 6.5%); // #337ab7
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// Form states and alerts
+
+$state-success-text: #3c763d;
+$state-success-bg: #dff0d8;
+$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%);
+
+$state-info-text: #31708f;
+$state-info-bg: #d9edf7;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
+
+$state-warning-text: #8a6d3b;
+$state-warning-bg: #fcf8e3;
+$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 5%);
+
+$state-danger-text: #a94442;
+$state-danger-bg: #f2dede;
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 5%);
+
+//Buttons
+$btn-font-weight: normal;
+
+$btn-default-color: #333;
+$btn-default-bg: #fff;
+$btn-default-border: #ccc;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: darken($btn-primary-bg, 5%);
+
+$btn-success-color: #fff;
+$btn-success-bg: $brand-success;
+$btn-success-border: darken($btn-success-bg, 5%);
+
+$btn-info-color: #fff;
+$btn-info-bg: $brand-info;
+$btn-info-border: darken($btn-info-bg, 5%);
+
+$btn-warning-color: #fff;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: darken($btn-warning-bg, 5%);
+
+$btn-danger-color: #fff;
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: darken($btn-danger-bg, 5%);
+
+$btn-link-disabled-color: $gray-light;
+
+$btn-border-radius-base: $border-radius-base;
+$btn-border-radius-large: $border-radius-large;
+$btn-border-radius-small: $border-radius-small;
+
+// Forms
+$input-bg: #fff;
+$input-bg-disabled: $gray-lighter;
+
+$input-color: $gray;
+$input-border: #ccc;
+
+$input-border-radius: $border-radius-base;
+$input-border-radius-large: $border-radius-large;
+$input-border-radius-small: $border-radius-small;
+
+$input-border-focus: #66afe9;
+$input-color-placeholder: #999;
+
+$input-height-base: 36px;
+$input-height-large: 42px;
+$input-height-small: 32px;
+
+$form-group-margin-bottom: 15px;
+
+$cursor-disabled: not-allowed;
+
+//Alerts
+
+$alert-padding: 15px;
+$alert-border-radius: $border-radius-base;
+$alert-link-font-weight: bold;
+
+$alert-success-bg: $state-success-bg;
+$alert-success-text: $state-success-text;
+$alert-success-border: $state-success-border;
+
+$alert-info-bg: $state-info-bg;
+$alert-info-text: $state-info-text;
+$alert-info-border: $state-info-border;
+
+$alert-warning-bg: $state-warning-bg;
+$alert-warning-text: $state-warning-text;
+$alert-warning-border: $state-warning-border;
+
+$alert-danger-bg: $state-danger-bg;
+$alert-danger-text: $state-danger-text;
+$alert-danger-border: $state-danger-border;

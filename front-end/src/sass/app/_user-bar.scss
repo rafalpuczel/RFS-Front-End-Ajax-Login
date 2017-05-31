@@ -1,0 +1,41 @@
+#rfs-feal-user-bar {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	background-color: $brand-primary;
+
+	.rfs-feal-user-bar-inner {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 10px 10px 5px;
+
+		&:before,
+		&:after {
+			display: table;
+			content: '';
+		}
+		&:after {
+			clear: both;
+		}
+		.rfs-feal-user-bar-col {
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+
+			p {
+				color: $white;
+				margin: 0 0 0 5px;
+				line-height: $line-height-sm;
+				font-weight: $font-weight-headings;
+				display: inline-block;
+			}
+			a {
+				color: $btn-primary-color;
+			}
+			.rfs-feal-icon {
+				
+			}
+		}
+	}
+}

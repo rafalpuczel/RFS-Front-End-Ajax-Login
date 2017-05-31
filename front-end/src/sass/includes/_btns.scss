@@ -1,0 +1,55 @@
+#rfs-feal {
+	.btn {
+		display: inline-block;
+		margin-bottom: 0; // For input.btn
+		font-weight: $btn-font-weight;
+		text-align: center;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+		border: 1px solid transparent;
+		white-space: nowrap;
+		@include button-size($padding-base-vertical, $padding-xlarge-horizontal, $font-size-md, $line-height-base, $btn-border-radius-base);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $btn-default-color;
+			text-decoration: none;
+		}
+
+		&.disabled,
+		&[disabled] {
+			cursor: $cursor-disabled;
+		}
+	}
+
+	a.btn {
+		&.disabled {
+			pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+		}
+	}
+	.btn-default {
+		@include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+	}
+	.btn-primary {
+		@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+	}
+	// Success appears as green
+	.btn-success {
+		@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+	}
+	// Info appears as blue-green
+	.btn-info {
+		@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+	}
+	// Warning appears as orange
+	.btn-warning {
+		@include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+	}
+	// Danger and error appear as red
+	.btn-danger {
+		@include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+	}
+}

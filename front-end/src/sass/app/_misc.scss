@@ -1,0 +1,42 @@
+#rfs-feal {
+	padding: 10px;
+
+	.loader {
+		background-image: url(../images/loader.svg);
+		background-size: 100% 100%;
+		display: inline-block;
+		vertical-align: middle;
+		width: 30px; height: 30px;
+		margin-left: 20px;
+		opacity: 0;
+	}
+	.alert {
+		padding: 8px 5px 5px;
+	}
+
+	.password-conditions {
+		display: none;
+		color: $gray-light;
+		background-color: $bg-lighter;
+		padding: $padding-small-vertical $padding-large-vertical;
+		border-radius: $border-radius-base;
+		
+		ul li {
+			line-height: $line-height-sm;
+
+			&:before {
+				content: '- ';
+			}
+		}
+	}
+
+	.password-hint {
+		cursor: pointer;
+		transition: color .3s ease-in-out;
+		font-weight: 600;
+
+		&:hover {
+			color: $brand-primary;
+		}
+	}
+}

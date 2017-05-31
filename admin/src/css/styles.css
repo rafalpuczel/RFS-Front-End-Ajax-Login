@@ -1,0 +1,10 @@
+.nav-tab {
+	box-shadow: none !important;
+	outline: none !important;
+}
+.nav-tab-content {
+	display: none;
+}
+.nav-tab-content.nav-tab-content-active {
+	display: block !important;
+}
