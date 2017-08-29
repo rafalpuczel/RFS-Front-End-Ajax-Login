@@ -236,7 +236,7 @@ if( !class_exists('RFSfrontEndAjaxLoginFront') ) {
 				wp_safe_redirect( $url.'#loggedin' ); exit;
 			}
 
-			if( is_page( feal()->profile_page ) && !is_user_logged_in() ) {
+			if( is_page( feal()->profile_page ) && absint(feal()->profile_page) > 0 && !is_user_logged_in() ) {
 				wp_safe_redirect( get_permalink( feal()->login_page ) ); exit;
 			}
 		}

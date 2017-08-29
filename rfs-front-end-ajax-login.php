@@ -106,12 +106,11 @@ if( !class_exists('RFSfrontEndAjaxLogin') ) {
 
 			if( !$this->enableRegistration ) {
 				add_action( 'admin_notices', array($this, 'registration_functionality_notice') );
-				return false;
-			}
-
-			if( ( !$this->profile_page || get_post_status( $this->profile_page ) != 'publish' ) && $this->enableRegistration ) {
-				add_action( 'admin_notices', array($this, 'no_profile_page_found') );
-				return false;
+			}else {
+				if( ( !$this->profile_page || get_post_status( $this->profile_page ) != 'publish' ) ) {
+					add_action( 'admin_notices', array($this, 'no_profile_page_found') );
+					return false;
+				}
 			}
 
 			add_action( 'plugins_loaded', array($this, 'create_db_tables') );
