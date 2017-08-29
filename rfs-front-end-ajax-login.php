@@ -356,7 +356,7 @@ if( !class_exists('RFSfrontEndAjaxLogin') ) {
 			
 			if( $post_type == 'page' && $pagenow == 'post.php') {
 				if( $post->ID == $this->login_page || $post->ID == $this->profile_page ) {
-					echo '<style>#postdivrich, #postimagediv, #screen-meta label[for=postimagediv-hide], #commentstatusdiv, #screen-meta label[for=commentstatusdiv-hide], #commentsdiv, #screen-meta label[for=commentsdiv-hide], #authordiv, #screen-meta label[for=authordiv-hide], #postcustom, #screen-meta label[for=postcustom-hide], #pageparentdiv, #screen-meta label[for=pageparentdiv-hide], #revisionsdiv, #screen-meta label[for=revisionsdiv-hide] { display: none; }</style>
+					echo '<style>#postdivrich, #postimagediv, #screen-meta label[for=postimagediv-hide], #commentstatusdiv, #screen-meta label[for=commentstatusdiv-hide], #commentsdiv, #screen-meta label[for=commentsdiv-hide], #authordiv, #screen-meta label[for=authordiv-hide], #postcustom, #screen-meta label[for=postcustom-hide], #pageparentdiv, #screen-meta label[for=pageparentdiv-hide], #revisionsdiv, #screen-meta label[for=revisionsdiv-hide], #acf_after_title-sortables, .acf-postbox { display: none; }</style>
 					';
 				}
 			}
