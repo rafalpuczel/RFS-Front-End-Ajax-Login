@@ -64,6 +64,20 @@ if( !class_exists('RFSfrontEndAjaxLogin') ) {
 	}
 	register_activation_hook( __FILE__, 'create_front_end_pages' );
 
+	/**
+	 * This function will render page content - to be used in a template page.php if it doesn't contain default the_content() wp function
+	 * @param 
+	 * @return 
+	*/
+	function rfs_front_end_ajax_login_content() {
+		$login_page_id 		= get_option( 'rfs_frontend_login_page' );
+		$profile_page_id 	= get_option( 'rfs_frontend_profile_page' );
+
+		if( (absint( $login_page_id ) > 0 && is_page( $login_page_id ) ) || (absint( $profile_page_id ) > 0 && is_page( $profile_page_id) ) ) {
+			the_content();
+		}
+	}
+
 	class RFSfrontEndAjaxLogin {
 
 		// vars
@@ -148,6 +162,9 @@ if( !class_exists('RFSfrontEndAjaxLogin') ) {
 			}
 			if( absint( $this->login_lockdown_time ) < 1 ) {
 				add_option( 'rfs_feal_login_lockdown_time', 30 );
+			}
+			if( $this->admin_access_options == false ) {
+				add_option( 'rfs_feal_admin_access', array('administrator') );
 			}
 		}
 

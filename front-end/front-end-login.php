@@ -10,7 +10,8 @@ if( !class_exists('RFSfrontEndAjaxLoginFront') ) {
 			add_shortcode( 'rfs_login_page', array($this, 'render_login_page_content') );
 			add_shortcode( 'rfs_profile_page', array($this, 'render_profile_page_content') );
 
-			add_action( 'wp_enqueue_scripts', array($this, 'load_assets'), 11 );
+			add_action( 'wp_enqueue_scripts', array($this, 'load_js_assets'), 11 );
+			add_action( 'wp_enqueue_scripts', array($this, 'load_css_assets'), 9 );
 
 			add_action( 'login_init', array($this, 'default_login_page_redirect') );
 			add_action( 'template_redirect', array($this, 'feal_pages_redirects') );
@@ -36,12 +37,20 @@ if( !class_exists('RFSfrontEndAjaxLoginFront') ) {
 		}
 
 		/**
-		 * This function will load plugin styles and js scripts
+		 * This function will load plugin css styles
 		 * @param n/a
 		 * @return n/a
 		*/
-		public function load_assets() {
+		public function load_css_assets() {
 			wp_enqueue_style( 'rfs_front_end_login', plugin_dir_url( __FILE__ ).'dist/css/styles.min.css', array(), '1.0');
+		}
+
+		/**
+		 * This function will load plugin js scripts
+		 * @param n/a
+		 * @return n/a
+		*/
+		public function load_js_assets() {
 			wp_enqueue_script( 'rfs_front_end_login', plugin_dir_url(__FILE__).'dist/js/scripts.min.js',array(),'1.0', true);
 
 			wp_enqueue_script('rfs_feal_ajax', plugin_dir_url( __FILE__ ).'dist/js/ajax.js', array('jquery'),'', true );
@@ -173,7 +182,9 @@ if( !class_exists('RFSfrontEndAjaxLoginFront') ) {
 			$user 	= $user ? $user : wp_get_current_user();
 			$roles 	= $user->roles;
 
-			$hasAccess = array_intersect( feal()->admin_access_options, $roles );
+			$admin_access = is_array( feal()->admin_access_options ) ? feal()->admin_access_options : array();
+			
+			$hasAccess = array_intersect( $admin_access, $roles );
 
 			return !empty( $hasAccess );
 		}
